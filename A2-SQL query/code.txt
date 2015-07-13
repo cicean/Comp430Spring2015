@@ -1,0 +1,206 @@
+The database maintained by the SPCC has four tables:
+
+PEAK (NAME, ELEV, DIFF, MAP, REGION) 
+CLIMBER (NAME, SEX)
+PARTICIPATED (TRIP_ID, NAME)
+CLIMBED (TRIP_ID, PEAK, WHEN_CLIMBED)
+
+
+1
+select *
+from peak
+where ELEV >=14000
+2
+select NAME,ELEV
+from PEAK
+where name='Sirretta Peak'
+
+3
+Select DISTINCT CLIMBER.Name,sex,PEAK.REGION
+From CLIMBER
+inner JOIN PARTICIPATED  on CLIMBER.name =PARTICIPATED.name inner join CLIMBED on PARTICIPATED.TRIP_ID=CLIMBED.TRIP_ID inner JOIN PEAK  on PEAK.name =CLIMBED.peak 
+where CLIMBER.sex='F' and PEAK.REGION='Corocoran to Whitney' 
+
+4.
+Create view cd as 
+select c.Name,count(c.DIFF)as num
+From (Select CLIMBER.Name,Peak.diff
+From CLIMBER
+inner JOIN PARTICIPATED  on CLIMBER.name =PARTICIPATED.name inner join CLIMBED 
+on PARTICIPATED.TRIP_ID=CLIMBED.TRIP_ID inner JOIN PEAK  on PEAK.name =CLIMBED.peak 
+Where PEAK.DIFF>=4 ) as c group by c.Name
+
+Select cd.Name,num
+from cd
+where num>=2
+
+DROP view cd
+
+Go
+
+
+5.
+Select TOP(1)Peak.name,CLIMBER.Name,Peak.ELEV
+From CLIMBER
+inner JOIN PARTICIPATED  on CLIMBER.name =PARTICIPATED.name inner join CLIMBED 
+on PARTICIPATED.TRIP_ID=CLIMBED.TRIP_ID inner JOIN PEAK  on PEAK.name =CLIMBED.peak 
+Where CLIMBER.Name='EDWARD' 
+order by Peak.ELEV DESC
+
+
+6.
+create view pe2 as (select pe.NAME
+from PEAK as pe
+where pe.NAME not in (select Peak.name as PEAK_NAME
+From CLIMBER
+inner JOIN PARTICIPATED  on CLIMBER.name =PARTICIPATED.name inner join CLIMBED 
+on PARTICIPATED.TRIP_ID=CLIMBED.TRIP_ID inner JOIN PEAK  on PEAK.name =CLIMBED.peak)) 
+
+create view totaltimes as select avgtime1.name as PEAK_NAME,count(avgtime1.TRIP_ID) as CLIMBED_TIMES,avgtime1.YEAR_CLIMBED
+from (select pe2.name, TRIP_ID,YEAR_CLIMBED
+from pe2 left outer join (Select Peak.name as PEAK_NAME,CLIMBED.TRIP_ID,year(CLIMBED.WHEN_CLIMBED)as YEAR_CLIMBED
+From CLIMBER
+inner JOIN PARTICIPATED  on CLIMBER.name =PARTICIPATED.name inner join CLIMBED 
+on PARTICIPATED.TRIP_ID=CLIMBED.TRIP_ID inner JOIN PEAK  on PEAK.name =CLIMBED.peak) as pe3 on pe2.name = pe3.PEAK_NAME 
+Union all
+Select Peak.name as PEAK_NAME,CLIMBED.TRIP_ID,year(CLIMBED.WHEN_CLIMBED)as YEAR_CLIMBED
+From CLIMBER
+inner JOIN PARTICIPATED  on CLIMBER.name =PARTICIPATED.name inner join CLIMBED 
+on PARTICIPATED.TRIP_ID=CLIMBED.TRIP_ID inner JOIN PEAK  on PEAK.name =CLIMBED.peak) as avgtime1
+group by avgtime1.name,avgtime1.YEAR_CLIMBED
+
+create view avgtimes2 as select PEAK_NAME,sum(CLIMBED_TIMES)as TOTALTIMES,count(DISTINCT YEAR_CLIMBED) as AVG_YEAR
+from totaltimes
+group by PEAK_NAME
+
+Select PEAK_NAME,TOTALTIMES/((select max(AVG_YEAR) as max_year
+from avgtimes2 )
+) as AVG_TIMES
+FROM avgtimes2
+
+DROP view avgtimes2
+
+DROP view totaltimes
+
+DROP view pe2
+
+GO
+
+
+
+7.
+Select top(1) PEAK_NAME,sum(CLIMBED_TIMES)as TOTAL_TIMES
+From AVGTIMES
+group by AVGTIMES.PEAK_NAME
+order by TOTAL_TIMES desc
+
+8.
+Select teg.SEX,SUM(teg.ELEV)as TOTAL_EVEL_GAIN
+From(
+Select SEX,PEAK.ELEV
+From CLIMBER
+inner JOIN PARTICIPATED  on CLIMBER.name =PARTICIPATED.name inner join CLIMBED on PARTICIPATED.TRIP_ID=CLIMBED.TRIP_ID inner JOIN PEAK  on PEAK.name=CLIMBED.peak ) as teg
+GROUP by teg.SEX
+
+9.
+Select ot.PEAK_NAME,ot.TOTAL_TIMES
+From(
+Select PEAK_NAME,sum(CLIMBED_TIMES)as TOTAL_TIMES
+From AVGTIMES
+group by AVGTIMES.PEAK_NAME
+) as ot
+Where ot.TOTAL_TIMES=1
+
+
+10.
+
+Select TOP(1)CLIMBER.name,CLIMBED.WHEN_CLIMBED
+From CLIMBER
+inner JOIN PARTICIPATED  on CLIMBER.name =PARTICIPATED.name inner join CLIMBED on PARTICIPATED.TRIP_ID=CLIMBED.TRIP_ID where CLIMBER.NAME='BARBARA'Order by CLIMBED.WHEN_CLIMBED
+
+Select DISTINCT CLIMBER.NAME
+From CLIMBER
+inner JOIN PARTICIPATED  on CLIMBER.name =PARTICIPATED.name inner join CLIMBED on PARTICIPATED.TRIP_ID=CLIMBED.TRIP_ID 
+Where CLIMBED.WHEN_CLIMBED < '2002-07-07 00:00:00:000'
+
+11.
+Select avger.AVG_ELEV, avger.REGION
+From (Select AVG(avge.Elev) as AVG_ELEV,avge.REGION
+From (Select *
+From PEAK as P
+where P.NAME not in( Select PEAK
+From CLIMBED)) as avge
+group by avge.REGION) as avger
+where avger.REGION = 'Corocoran to Whitney' 
+
+12.
+Select peak1
+From(select gapc.peak1, MIN(gapc.diffnum) as MINdiffnum
+       From (Select gap.peak1,gap.diffnum
+from(
+select gapdiff.PEAK1,DATEDIFF (DAY, gapdiff.starttime, gapdiff.endtime) as diffnum
+from (select  c1.PEAK as peak1 , c1.WHEN_CLIMBED as starttime,c2.PEAK,c2.WHEN_CLIMBED as endtime
+FROM CLIMBED as c1 full outer join CLIMBED as c2 on c1.PEAK=c2.PEAK) as gapdiff) as gap
+where gap.diffnum>0) as gapc
+	   group by gapc.peak1
+	   ) as gapcl
+where MINdiffnum>=365
+
+13.
+create view ran5 as select RANGEBASE,RANGEBASE+999 as RANGEHIGH,avgLDIFF
+from(
+select ra4.RANGEBASE,avg(DIFF) as avgLDIFF,count(DISTINCT DIFF) as CDIFF
+From (select p1.ELEV as RANGEBASE,p2.ELEV as COMP,p2.DIFF
+FROM PEAK as p1, PEAK as p2 
+Where p2.ELEV>=p1.ELEV and p2.ELEV<=p1.ELEV+1000 
+) as ra4
+group by ra4.RANGEBASE) as ra3
+where CDIFF>=3
+
+select RANGEBASE,RANGEBASE+999 as RANGEHIGH, MAX(avgLDIFF) as AVGDIFF
+FrOM ran5
+group by RANGEBASE,RANGEBASE+999
+
+Drop view ran5
+
+GO
+
+
+
+
+select elev as lowerange, eleve+999 as highrange,diff
+from peak
+
+
+14.
+create view regionrange as
+select REGION,Max(ELEV) as highe,min(ELEV) as lowe
+from peak
+Group by REGION
+
+select REGION,highe-lowe+1 as ELEV_REG
+from regionrange
+
+Drop view regionrange
+
+GO
+
+15.
+
+CREATE view CLMAP as
+select CLIMBER.NAME as CLIMBER_NAME,count(DISTINCT PEAK.NAME) as CLIMBED_PEAK,MAP
+From CLIMBER
+inner JOIN PARTICIPATED  on CLIMBER.name =PARTICIPATED.name inner join CLIMBED on PARTICIPATED.TRIP_ID=CLIMBED.TRIP_ID inner JOIN PEAK on PEAK.name=CLIMBED.peakgroup by CLIMBER.NAME,MAP
+
+select CLIMBER_NAME, CLMAP.MAPfrom CLMAP inner join (select count(DISTINCT name)as PEAK_IN,MAP
+from PEAK
+group by MAP)as mp3 on CLMAP.MAP=mp3.MAP
+where CLIMBED_PEAK=PEAK_IN
+
+
+Drop view CLMAP
+
+GO
+
+
+

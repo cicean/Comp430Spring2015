@@ -1,0 +1,9 @@
+Int p_partkey;
+Str p_name;
+Str p_mfgr;
+Str p_brand;
+Str p_type;
+Str p_size;
+Str p_container;
+Float p_retailprice;
+Str p_comment;

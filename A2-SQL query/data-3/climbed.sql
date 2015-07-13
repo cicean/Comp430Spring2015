@@ -1,0 +1,840 @@
+INSERT INTO CLIMBED VALUES (
+	1,
+	'Lone Pine Peak',
+	'06/11/2002');
+
+INSERT INTO CLIMBED VALUES (
+	1,
+	'Mount Langley',
+	'06/12/2002');
+
+INSERT INTO CLIMBED VALUES (
+	1,
+	'Mount Brewer',
+	'06/13/2002');
+
+INSERT INTO CLIMBED VALUES (
+	1,
+	'Muah Mountain',
+	'06/14/2002');
+
+INSERT INTO CLIMBED VALUES (
+	1,
+	'Thor Peak',
+	'06/15/2002');
+
+INSERT INTO CLIMBED VALUES (
+	1,
+	'Kearsarge Peak',
+	'06/16/2002');
+
+INSERT INTO CLIMBED VALUES (
+	1,
+	'Olancha Peak',
+	'06/16/2002');
+
+INSERT INTO CLIMBED VALUES (
+	1,
+	'Mount Irvine',
+	'06/17/2002');
+
+INSERT INTO CLIMBED VALUES (
+	1,
+	'Mount Guyot',
+	'06/18/2002');
+
+INSERT INTO CLIMBED VALUES (
+	1,
+	'University Peak',
+	'06/18/2002');
+
+INSERT INTO CLIMBED VALUES (
+	1,
+	'Mount Gardiner',
+	'06/19/2002');
+
+INSERT INTO CLIMBED VALUES (
+	1,
+	'Mount LeConte',
+	'06/20/2002');
+
+INSERT INTO CLIMBED VALUES (
+	2,
+	'Kearsarge Peak',
+	'06/28/2002');
+
+INSERT INTO CLIMBED VALUES (
+	2,
+	'Smith Mountain',
+	'06/29/2002');
+
+INSERT INTO CLIMBED VALUES (
+	2,
+	'Mount Genevra',
+	'06/30/2002');
+
+INSERT INTO CLIMBED VALUES (
+	2,
+	'Needham Mountain',
+	'07/1/2002');
+
+INSERT INTO CLIMBED VALUES (
+	2,
+	'Olancha Peak',
+	'07/02/2002');
+
+INSERT INTO CLIMBED VALUES (
+	3,
+	'Needham Mountain',
+	'7/07/2002');
+
+INSERT INTO CLIMBED VALUES (
+	3,
+	'Mount Irvine',
+	'7/08/2002');
+
+INSERT INTO CLIMBED VALUES (
+	3,
+	'Sirretta Peak',
+	'7/09/2002');
+
+INSERT INTO CLIMBED VALUES (
+	3,
+	'Triple Divide Peak',
+	'07/09/2002');
+
+INSERT INTO CLIMBED VALUES (
+	3,
+	'Mount Langley',
+	'07/10/2002');
+
+INSERT INTO CLIMBED VALUES (
+	3,
+	'Kearsarge Peak',
+	'07/11/2002');
+
+INSERT INTO CLIMBED VALUES (
+	3,
+	'Diamond Peak',
+	'07/11/2002');
+
+INSERT INTO CLIMBED VALUES (
+	4,
+	'North Maggie Mountain',
+	'07/16/2002');
+
+INSERT INTO CLIMBED VALUES (
+	4,
+	'Whaleback',
+	'07/17/2002');
+
+INSERT INTO CLIMBED VALUES (
+	4,
+	'Center Peak',
+	'07/18/2002');
+
+INSERT INTO CLIMBED VALUES (
+	5,
+	'Mount Langley',
+	'07/25/2002');
+
+INSERT INTO CLIMBED VALUES (
+	5,
+	'Mount Hale',
+	'07/26/2002');
+
+INSERT INTO CLIMBED VALUES (
+	5,
+	'Whaleback',
+	'07/26/2002');
+
+INSERT INTO CLIMBED VALUES (
+	5,
+	'Midway Mountain',
+	'07/26/2002');
+
+INSERT INTO CLIMBED VALUES (
+	5,
+	'Kearsarge Peak',
+	'07/28/2002');
+
+INSERT INTO CLIMBED VALUES (
+	5,
+	'Pilot Knob S',
+	'07/29/2002');
+
+INSERT INTO CLIMBED VALUES (
+	5,
+	'Lion Rock',
+	'07/30/2002');
+
+INSERT INTO CLIMBED VALUES (
+	6,
+	'Whaleback',
+	'08/03/2002');
+
+INSERT INTO CLIMBED VALUES (
+	6,
+	'Mount Jordan',
+	'08/04/2002');
+
+INSERT INTO CLIMBED VALUES (
+	6,
+	'Kearsarge Peak',
+	'08/05/2002');
+
+INSERT INTO CLIMBED VALUES (
+	6,
+	'Mount Stewart',
+	'08/06/2002');
+
+INSERT INTO CLIMBED VALUES (
+	6,
+	'Mount Newcomb',
+	'08/07/2002');
+
+INSERT INTO CLIMBED VALUES (
+	6,
+	'Kern Point',
+	'08/08/2002');
+
+INSERT INTO CLIMBED VALUES (
+	6,
+	'Florence Peak',
+	'08/09/2002');
+
+INSERT INTO CLIMBED VALUES (
+	7,
+	'Mount Hale',
+	'08/19/2002');
+
+INSERT INTO CLIMBED VALUES (
+	7,
+	'Mount Langley',
+	'08/20/2002');
+
+INSERT INTO CLIMBED VALUES (
+	7,
+	'Mount Guyot',
+	'08/21/2002');
+
+INSERT INTO CLIMBED VALUES (
+	7,
+	'Mount Rixford',
+	'08/21/2002');
+
+INSERT INTO CLIMBED VALUES (
+	7,
+	'North Guard',
+	'09/01/2002');
+
+INSERT INTO CLIMBED VALUES (
+	8,
+	'Mount Jordan',
+	'09/02/2002');
+
+INSERT INTO CLIMBED VALUES (
+	8,
+	'Midway Mountain',
+	'09/03/2002');
+
+INSERT INTO CLIMBED VALUES (
+	8,
+	'Moses Mountain',
+	'09/04/2002');
+
+INSERT INTO CLIMBED VALUES (
+	8,
+	'Mount Bradley',
+	'09/05/2002');
+
+INSERT INTO CLIMBED VALUES (
+	8,
+	'Mount Hale',
+	'09/06/2002');
+
+INSERT INTO CLIMBED VALUES (
+	8,
+	'North Guard',
+	'09/06/2002');
+
+INSERT INTO CLIMBED VALUES (
+	8,
+	'Mount Langley',
+	'09/06/2002');
+
+INSERT INTO CLIMBED VALUES (
+	8,
+	'Homers Nose',
+	'09/07/2002');
+
+INSERT INTO CLIMBED VALUES (
+	8,
+	'Lamont Peak',
+	'9/8/2002');
+
+INSERT INTO CLIMBED VALUES (
+	8,
+	'Mount Guyot',
+	'9/9/2002');
+
+INSERT INTO CLIMBED VALUES (
+	9,
+	'Kern Point',
+	'9/16/2002');
+
+INSERT INTO CLIMBED VALUES (
+	9,
+	'Mount Mallory',
+	'09/17/2002');
+
+INSERT INTO CLIMBED VALUES (
+	9,
+	'Mount Stanford S',
+	'09/18/2002');
+
+INSERT INTO CLIMBED VALUES (
+	9,
+	'Mount Langley',
+	'09/19/2002');
+
+INSERT INTO CLIMBED VALUES (
+	9,
+	'Mount Young',
+	'09/21/2002');
+
+INSERT INTO CLIMBED VALUES (
+	9,
+	'Owens Peak',
+	'09/22/2002');
+
+INSERT INTO CLIMBED VALUES (
+	9,
+	'South Guard',
+	'09/23/2002');
+
+INSERT INTO CLIMBED VALUES (
+	9,
+	'Glacier Ridge',
+	'9/24/2002');
+
+INSERT INTO CLIMBED VALUES (
+	9,
+	'Kearsarge Peak',
+	'9/26/2002');
+
+INSERT INTO CLIMBED VALUES (
+	9,
+	'Sirretta Peak',
+	'9/27/2002');
+
+INSERT INTO CLIMBED VALUES (
+	9,
+	'Spanish Needle',
+	'9/28/2002');
+
+INSERT INTO CLIMBED VALUES (
+	9,
+	'Mount Gould',
+	'9/29/2002');
+
+INSERT INTO CLIMBED VALUES (
+	10,
+	'Mount Hale',
+	'06/04/2003');
+
+INSERT INTO CLIMBED VALUES (
+	10,
+	'Needham Mountain',
+	'06/05/2003');
+
+INSERT INTO CLIMBED VALUES (
+	11,
+	'Mount Langley',
+	'06/10/2003');
+
+INSERT INTO CLIMBED VALUES (
+	11,
+	'Kearsarge Peak',
+	'06/11/2003');
+
+INSERT INTO CLIMBED VALUES (
+	11,
+	'Mount Guyot',
+	'06/12/2003');
+
+INSERT INTO CLIMBED VALUES (
+	11,
+	'Joe Devel Peak',
+	'06/13/2003');
+
+INSERT INTO CLIMBED VALUES (
+	11,
+	'Mount McAdie',
+	'06/14/2003');
+
+INSERT INTO CLIMBED VALUES (
+	11,
+	'Mount Newcomb',
+	'06/15/2003');
+
+INSERT INTO CLIMBED VALUES (
+	11,
+	'South Guard',
+	'06/16/2003');
+
+INSERT INTO CLIMBED VALUES (
+	12,
+	'Mount Langley',
+	'06/24/2003');
+
+INSERT INTO CLIMBED VALUES (
+	12,
+	'Mount Williamson',
+	'06/25/2003');
+
+INSERT INTO CLIMBED VALUES (
+	12,
+	'Crag Peak',
+	'06/25/2003');
+
+INSERT INTO CLIMBED VALUES (
+	12,
+	'Glacier Ridge',
+	'06/25/2003');
+
+INSERT INTO CLIMBED VALUES (
+	12,
+	'North Guard',
+	'06/26/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Needham Mountain',
+	'07/02/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Mount Langley',
+	'07/03/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'South Guard',
+	'07/04/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Olancha Peak',
+	'07/04/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Mount Irvine',
+	'07/04/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Kearsarge Peak',
+	'07/04/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Mount Brewer',
+	'07/07/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Muah Mountain',
+	'07/08/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Mount Guyot',
+	'07/09/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Mount Whitney',
+	'07/10/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Mount Stewart',
+	'07/11/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Mount Clarance King',
+	'07/12/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Mount Gould',
+	'07/12/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Sirretta Peak',
+	'07/12/2003');
+
+INSERT INTO CLIMBED VALUES (
+	13,
+	'Cartago Peak',
+	'07/13/2003');
+
+INSERT INTO CLIMBED VALUES (
+	14,
+	'Sirretta Peak',
+	'07/21/2003');
+
+INSERT INTO CLIMBED VALUES (
+	15,
+	'Kearsarge Peak',
+	'07/30/2003');
+
+INSERT INTO CLIMBED VALUES (
+	15,
+	'Glacier Ridge',
+	'07/31/2003');
+
+INSERT INTO CLIMBED VALUES (
+	15,
+	'Mount Langley',
+	'08/01/2003');
+
+INSERT INTO CLIMBED VALUES (
+	16,
+	'South Guard',
+	'08/05/2003');
+
+INSERT INTO CLIMBED VALUES (
+	16,
+	'Mount Langley',
+	'08/06/2003');
+
+INSERT INTO CLIMBED VALUES (
+	16,
+	'Dragon Peak',
+	'08/07/2003');
+
+INSERT INTO CLIMBED VALUES (
+	16,
+	'Mount Barnard',
+	'08/08/2003');
+
+INSERT INTO CLIMBED VALUES (
+	16,
+	'Mount Newcomb',
+	'08/09/2003');
+
+INSERT INTO CLIMBED VALUES (
+	16,
+	'Thor Peak',
+	'08/10/2003');
+
+INSERT INTO CLIMBED VALUES (
+	16,
+	'Mount Guyot',
+	'08/11/2003');
+
+INSERT INTO CLIMBED VALUES (
+	17,
+	'Lion Rock',
+	'08/16/2003');
+
+INSERT INTO CLIMBED VALUES (
+	18,
+	'Mount Muir',
+	'08/17/2003');
+
+INSERT INTO CLIMBED VALUES (
+	18,
+	'Mount Jordan',
+	'08/18/2003');
+
+INSERT INTO CLIMBED VALUES (
+	18,
+	'Mount Irvine',
+	'08/19/2003');
+
+INSERT INTO CLIMBED VALUES (
+	18,
+	'Mount McAdie',
+	'08/20/2003');
+
+INSERT INTO CLIMBED VALUES (
+	18,
+	'Joe Devel Peak',
+	'08/20/2003');
+
+INSERT INTO CLIMBED VALUES (
+	18,
+	'Kearsarge Peak',
+	'08/21/2003');
+
+INSERT INTO CLIMBED VALUES (
+	18,
+	'Mount Langley',
+	'08/22/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'North Guard',
+	'08/23/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'Mount Langley',
+	'08/28/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'Mount McAdie',
+	'08/29/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'Muah Mountain',
+	'08/30/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'Mount Rixford',
+	'08/31/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'Mount Guyot',
+	'08/31/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'Olancha Peak',
+	'09/1/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'Whaleback',
+	'09/01/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'Kearsarge Peak',
+	'09/02/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'Lion Rock',
+	'09/03/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'Joe Devel Peak',
+	'09/04/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'Angora Mountain',
+	'09/05/2003');
+
+INSERT INTO CLIMBED VALUES (
+	19,
+	'Florence Peak',
+	'09/06/2003');
+
+INSERT INTO CLIMBED VALUES (
+	20,
+	'Mount Langley',
+	'09/13/2003');
+
+INSERT INTO CLIMBED VALUES (
+	20,
+	'Muah Mountain',
+	'09/14/2003');
+
+INSERT INTO CLIMBED VALUES (
+	20,
+	'Kearsarge Peak',
+	'09/15/2003');
+
+INSERT INTO CLIMBED VALUES (
+	20,
+	'Mount Pickering',
+	'09/15/2003');
+
+INSERT INTO CLIMBED VALUES (
+	20,
+	'Mount Guyot',
+	'09/16/2003');
+
+INSERT INTO CLIMBED VALUES (
+	21,
+	'Kearsarge Peak',
+	'06/23/2004');
+
+INSERT INTO CLIMBED VALUES (
+	21,
+	'Mount Young',
+	'06/24/2004');
+
+INSERT INTO CLIMBED VALUES (
+	21,
+	'Needham Mountain',
+	'06/25/2004');
+
+INSERT INTO CLIMBED VALUES (
+	21,
+	'Mount Hale',
+	'06/26/2004');
+
+INSERT INTO CLIMBED VALUES (
+	21,
+	'Homers Nose',
+	'06/27/2004');
+
+INSERT INTO CLIMBED VALUES (
+	22,
+	'South Guard',
+	'07/03/2004');
+
+INSERT INTO CLIMBED VALUES (
+	22,
+	'Mount Langley',
+	'07/04/2004');
+
+INSERT INTO CLIMBED VALUES (
+	22,
+	'Kearsarge Peak',
+	'07/05/2004');
+
+INSERT INTO CLIMBED VALUES (
+	22,
+	'Diamond Peak',
+	'07/06/2004');
+
+INSERT INTO CLIMBED VALUES (
+	22,
+	'Moses Mountain',
+	'07/07/2004');
+
+INSERT INTO CLIMBED VALUES (
+	23,
+	'Lion Rock',
+	'07/14/2004');
+
+INSERT INTO CLIMBED VALUES (
+	23,
+	'Kearsarge Peak',
+	'07/15/2004');
+
+INSERT INTO CLIMBED VALUES (
+	23,
+	'Mount Stewart',
+	'07/15/2004');
+
+INSERT INTO CLIMBED VALUES (
+	23,
+	'Mount Mallory',
+	'07/16/2004');
+
+INSERT INTO CLIMBED VALUES (
+	23,
+	'Coyote Peaks',
+	'07/17/2004');
+
+INSERT INTO CLIMBED VALUES (
+	23,
+	'North Guard',
+	'07/17/2004');
+
+INSERT INTO CLIMBED VALUES (
+	24,
+	'Mount McAdie',
+	'07/25/2004');
+
+INSERT INTO CLIMBED VALUES (
+	24,
+	'Lion Rock',
+	'07/26/2004');
+
+INSERT INTO CLIMBED VALUES (
+	24,
+	'Mount Langley',
+	'07/26/2004');
+
+INSERT INTO CLIMBED VALUES (
+	24,
+	'Kearsarge Peak',
+	'07/27/2004');
+
+INSERT INTO CLIMBED VALUES (
+	24,
+	'Kern Peak',
+	'07/28/2004');
+
+INSERT INTO CLIMBED VALUES (
+	25,
+	'Mount Langley',
+	'08/06/2004');
+
+INSERT INTO CLIMBED VALUES (
+	25,
+	'Mount Guyot',
+	'08/07/2004');
+
+INSERT INTO CLIMBED VALUES (
+	25,
+	'Vandever Mountain',
+	'08/08/2004');
+
+INSERT INTO CLIMBED VALUES (
+	25,
+	'Joe Devel Peak',
+	'08/09/2004');
+
+INSERT INTO CLIMBED VALUES (
+	25,
+	'Smith Mountain',
+	'08/10/2004');
+
+INSERT INTO CLIMBED VALUES (
+	26,
+	'Needham Mountain',
+	'08/11/2004');
+
+INSERT INTO CLIMBED VALUES (
+	26,
+	'Midway Mountain',
+	'08/12/2004');
+
+INSERT INTO CLIMBED VALUES (
+	26,
+	'Mount Williamson',
+	'08/13/2004');
+
+INSERT INTO CLIMBED VALUES (
+	27,
+	'Needham Mountain',
+	'08/14/2004');
+
+INSERT INTO CLIMBED VALUES (
+	27,
+	'Midway Mountain',
+	'08/15/2004');
+
+INSERT INTO CLIMBED VALUES (
+	27,
+	'Mount Williamson',
+	'08/16/2004');
+
+INSERT INTO CLIMBED VALUES (
+	27,
+	'Moses Mountain',
+	'08/17/2004');
+
+INSERT INTO CLIMBED VALUES (
+	28,
+	'Moses Mountain',
+	'08/18/2004');
+

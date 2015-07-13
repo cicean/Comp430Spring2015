@@ -1,0 +1,9 @@
+Int o_o_orderkey;
+Int o_o_custkey;
+Str o_o_orderstatus;
+Float o_o_totalprice;
+Str o_o_orderdate;
+Str o_o_orderpriority;
+Str o_o_clerk;
+Int o_o_shippriority;
+Str o_o_comment;
